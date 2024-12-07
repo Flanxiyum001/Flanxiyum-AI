@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Futurize Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <div class="projects">
+    <h1>My Projects</h1>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-image" style="background-image: url('{{ url_for('static', filename='images/project-placeholder.jpg') }}');"></div>
+        <div class="project-info">
+          <h2>Project Title 1</h2>
+          <p>Short description of the project goes here.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image" style="background-image: url('{{ url_for('static', filename='images/project-placeholder.jpg') }}');"></div>
+        <div class="project-info">
+          <h2>Project Title 2</h2>
+          <p>Short description of the project goes here.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image" style="background-image: url('{{ url_for('static', filename='images/project-placeholder.jpg') }}');"></div>
+        <div class="project-info">
+          <h2>Project Title 3</h2>
+          <p>Short description of the project goes here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
